@@ -1,4 +1,6 @@
+from typing import Union
 from gensim.models import KeyedVectors
+from gensim.models.keyedvectors import FastTextKeyedVectors
 
 
 class WordEmbeddingModel:
@@ -8,7 +10,7 @@ class WordEmbeddingModel:
     It includes the name of the model and some vocab prefix if needed.
     """
     def __init__(self,
-                 word_embedding: KeyedVectors,
+                 word_embedding: Union[KeyedVectors, FastTextKeyedVectors],
                  model_name: str = None,
                  vocab_prefix: str = None):
         """Initializes the WordEmbeddingModel container.
@@ -62,9 +64,9 @@ class WordEmbeddingModel:
 
         """
 
-        if not isinstance(word_embedding, KeyedVectors):
+        if not isinstance(word_embedding, KeyedVectors) and not isinstance(word_embedding, FastTextKeyedVectors):
             raise TypeError('word_embedding must be an instance of a gensim\'s'
-                            ' KeyedVectors. Given: {}'.format(word_embedding))
+                            ' KeyedVectors or FastTextKeyedVectors. Given: {}'.format(word_embedding))
         else:
             self.model_ = word_embedding
 
