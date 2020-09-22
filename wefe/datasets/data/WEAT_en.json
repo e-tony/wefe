@@ -1,34 +1,29 @@
 {
-  "pleasant_5": [
+  "pleasant": [
     "caress",
     "freedom",
     "health",
     "love",
     "peace",
     "cheer",
-    "friend",
     "heaven",
     "loyal",
     "pleasure",
     "diamond",
     "gentle",
     "honest",
-    "lucky",
+    "luck",
     "rainbow",
     "diploma",
     "gift",
     "honor",
     "miracle",
-    "sunrise",
     "family",
     "happy",
     "laughter",
-    "paradise",
     "vacation"
   ],
-  "unpleasant_5": [
-    "abuse",
-    "crash",
+  "unpleasant": [
     "filth",
     "murder",
     "sickness",
@@ -43,7 +38,6 @@
     "pollute",
     "tragedy",
     "divorce",
-    "jail",
     "poverty",
     "ugly",
     "cancer",
@@ -306,9 +300,9 @@
     "algebra",
     "geometry",
     "calculus",
-    "equations",
+    "equation",
     "computation",
-    "numbers",
+    "number",
     "addition"
   ],
   "arts": [
