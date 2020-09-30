@@ -305,7 +305,7 @@ def fetch_debias_multiclass() -> dict:
     return word_sets_dict
 
 
-def load_weat():
+def load_weat(lang="en"):
     """Load the word sets used in the paper *Semantics Derived Automatically*
     *From Language Corpora Contain Human-Like Biases*.
     It includes gender (male, female), ethnicity(black, white)
@@ -324,8 +324,12 @@ def load_weat():
 
 
     """
+    langs = ["en", "de", "ka"]
+    if lang not in langs:
+        raise KeyError('Word sets have to be one of the following languages: ["en", "de", "ka"] Given: {}'.format(lang))
+
     resource_package = __name__
-    resource_path = '/'.join(('data', 'WEAT.json'))
+    resource_path = '/'.join(('data', f'WEAT_{lang}.json'))
     weat_data = pkg_resources.resource_string(resource_package, resource_path)
 
     data = json.loads(weat_data.decode())
