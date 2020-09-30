@@ -121,7 +121,8 @@
     "er",
     "ihm",
     "ihn",
-    "Sohn"
+    "Sohn",
+    "der"
   ],
   "female_terms": [
     "weiblich",
@@ -131,7 +132,8 @@
     "sie",
     "ihr",
     "ihrer",
-    "Tochter"
+    "Tochter",
+    "die"
   ],
   "male_names": [
     "Michael",
@@ -177,7 +179,7 @@
     "Heike",
     "Sandra"
   ],
-  "male_professions_Bommasani": [
+  "masculine_professions_Bommasani": [
     "Wirtschaftsprüfer",
     "Darsteller",
     "Administrator",
@@ -413,7 +415,7 @@
     "Ringer",
     "Schriftsteller"
   ],
-  "female_professions_Bommasani": [
+  "feminine_professions_Bommasani": [
     "Wirtschaftsprüferin",
     "Darstellerin",
     "Administratorin",
@@ -649,7 +651,8 @@
     "Ringerin",
     "Schriftstellerin"
   ],
-  "masculine_inanimate_nouns": ["Abend",
+  "masculine_inanimate_nouns": [
+    "Abend",
     "Abfluss",
     "Abstieg",
     "Absturz",
